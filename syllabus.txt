@@ -1,0 +1,61 @@
+============================================================
+
+30/03/2019
+
+php varibales:
+
+boolval
+=================
+Rules:
+
+integer - 0 is always false
+float   - 0.0 is always false
+string  - 0 and empty string is always false
+array   - empty array is false and remaining values are true
+object  - null is always is false and everything is true 
+null    - null is alwaysss
+
+
+debug_zval_dump
+==================
+
+
+returns the string value along with along with count value  and how many times the varible has been referenced
+reference is used by the symbol &.
+
+doubleval
+==================
+alias of floatval
+
+floatval
+==================
+returns the float value of the variable
+
+case 1: values appended at the right
+case 2: values appended at the left
+
+floatval should not be passed with object
+
+empty
+=================
+check the variable has value or not 
+check the variable has empty or not
+ 
+zero is conisdered as empty either as integer or as in string
+0.0 is considered as emptyu
+NULL is considered as empty   // It should be without string
+FALSE is considered as empty  // It should be without string
+empty array is considered as empty
+
+get_defined_vars
+=================
+returns an array defined varibales
+
+get_resource_type
+==================
+get resource type like mysql ,  stream,  document etc
+
+
+
+
+
