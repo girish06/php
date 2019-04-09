@@ -1,0 +1,31 @@
+09/04/2019
+
+addcslahses
+====================
+
+return string with slashes with specified character list
+
+Required parameters
+- input string
+- charlist
+  
+
+we have predefined slahes characters where we need to consider.
+
+\0-null
+\n-new line
+\r-carriage return
+\t-tab
+\f-form feed
+\v-vertical tab
+
+====================================================================================================
+addslashes
+
+return string with slahes  with specified character list as mentioned below
+
+single quotes
+double quotes
+backslash
+null type
+
