@@ -1,0 +1,175 @@
+31/03/2019
+
+gettype
+=================
+get the type of variable(eg.. boolean,string etc)
+
+
+import_request_variables  -Needs work 
+========================
+ — Import GET/POST/Cookie variables into the global scope
+
+
+intval
+=======================
+get the integer value of the variable.
+should not be used to varaiable holding the object value which throws the error.
+
+is_array
+======================
+Check the variable is array or not
+
+is_bool
+======================
+check the variable has the boolean value.
+
+is_callable
+===========================
+it checks the varaible is holding any functioin name
+its checks the variable is holding any object or any method within the object
+
+it has three parameteres
+
+1. varaible name
+2. bool value - True or false : 
+   validates the the value is valid function or method and simply rejects the improper structure
+   two possible that one is valid function or string and second is string.
+3. callable name.
+
+is_double or is_float
+====================
+checks the variable is float or not
+
+is_int or is_integer or is_long
+===============================
+checks the variable is integer or not
+
+is_null
+===========================
+check the variable is null or not.
+
+is_object
+==========================
+checks the variable is object or not.
+
+is_resource
+========================
+checks the resource is avaible or not. eg. file,  // needs work
+
+is_scalar
+=======================
+check the variable is scalar type of string,float,integer 
+remaining datatypes are not considered as scalar types.
+
+is_string
+=======================
+check the variable contains the string value if not it will return as false.
+
+isset
+=======================
+check the variable is declared.
+if variable is declared and if its holding the value NULL. Then its return false.
+
+print_r
+=======================
+gives the output of the variable that in human readable format.
+
+serialize
+======================
+gives the value in storable representation of value.
+which can transmitted over a network,  stored in file.
+
+settype:
+=====================
+set the datatype to the variable.
+
+strval
+====================
+
+converts any scalar value to string. [scalar is an integer, string, float].
+we cannot use array or object and incase applied returns the type name of the value being converted.
+
+unset
+==================
+destroy the varible.
+
+var_dump
+==================
+
+gives information about the variable.
+arrays and objects are explored 
+
+var_export
+==================
+The var_export() function is used to get structured information (only value) of a variable.
+
+
+============================================================
+
+30/03/2019
+
+php varibales:
+
+boolval
+=================
+Rules:
+
+integer - 0 is always false
+float   - 0.0 is always false
+string  - 0 and empty string is always false
+array   - empty array is false and remaining values are true
+object  - null is always is false and everything is true 
+null    - null is alwaysss
+
+
+debug_zval_dump
+==================
+
+
+returns the string value along with along with count value  and how many times the varible has been referenced
+reference is used by the symbol &.
+
+doubleval
+==================
+alias of floatval
+
+floatval
+==================
+returns the float value of the variable
+
+case 1: values appended at the right
+case 2: values appended at the left
+
+floatval should not be passed with object
+
+empty
+=================
+check the variable has value or not 
+check the variable has empty or not
+ 
+zero is conisdered as empty either as integer or as in string
+0.0 is considered as emptyu
+NULL is considered as empty   // It should be without string
+FALSE is considered as empty  // It should be without string
+empty array is considered as empty
+
+get_defined_vars
+=================
+returns an array defined varibales
+
+get_resource_type
+==================
+get resource type like mysql ,  stream,  document etc // not working
+
+
+
+
+
+
+
+
+
+
+
+
+
